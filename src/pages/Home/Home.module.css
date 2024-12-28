@@ -1,0 +1,21 @@
+.home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    padding: 0 10%
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-top: 80px;
+    font-weight: 500;
+}
+
+.dish_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

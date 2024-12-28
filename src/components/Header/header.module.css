@@ -1,0 +1,70 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #0B2B26;
+    min-height: fit-content;
+    color: white;
+    overflow: visible;
+}
+
+.container * {
+    background-color: inherit;
+    color: inherit;
+}
+
+.left {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 4rem;
+    width: 80%;
+    text-align: left;
+}
+
+.left .top {
+    display: flex;
+    gap: 2rem;
+}
+
+.left .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.left .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: yellow;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;    
+}
+
+.left button {
+    padding: 0.4rem 0.8rem;
+    background-color: yellow;
+    color: black;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.restaurant_image {
+    width: 280px;
+    height: 320px;
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+    border-radius: 10px;
+    top: -120px;
+}
+

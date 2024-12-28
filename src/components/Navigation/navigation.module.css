@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 4rem;
+}
+
+.logo {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.nav_links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.nav_links a:hover {
+    background-color: #0B2B26;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+    
+}
