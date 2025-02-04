@@ -3,8 +3,10 @@ import { RootLayout } from './layouts/RootLayout'
 import Home from './pages/Home/Home'
 import { BookingPage } from './pages/Booking/BookingPage';
 import { AboutPage } from "./pages/About/AboutPage";
-import { MenuPage } from './pages/Menu/MenuPage';
-import ConfirmedBooking from './components/ConfirmedBooking/ConfirmedBooking';
+import { CategoryPage } from "./pages/Category/CategoryPage";
+import { PageNotFound } from './pages/PageNotFound';
+import { RecipesPage } from './pages/Recipes/RecipesPage';
+import { RecipesDetails } from './pages/RecipesDetails/RecipesDetails';
 
 function App() {
 
@@ -14,8 +16,12 @@ function App() {
         <Route index element={<Home />} />
         <Route path="reservation" element={<BookingPage />} />
         <Route path="about" element={<AboutPage />} />
-        <Route path="menu" element={<MenuPage />} />
-        <Route path="confirmation" element={<ConfirmedBooking />} />
+
+        <Route path="recipes-category" element={<CategoryPage />} />
+        <Route path="recipes-category/:category" element={<RecipesPage />} />
+        <Route path="recipes-category/:category/:recipeId" element={<RecipesDetails />} />
+
+        <Route path="*" element={<PageNotFound />} />
       </Route>
     )
   );

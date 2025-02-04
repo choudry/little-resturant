@@ -8,13 +8,13 @@ import Navigation from '../components/Navigation/Navigation';
 export const RootLayout = () => {
   return (
     <Grid className={styles.root_layout}>
-      <GridItem bg="gray.100" p="20px" maxHeight="fit-content">
+      <GridItem p="20px" gridRow="1" backgroundColor={"#f5f5f5"}>
         <Navigation />
       </GridItem>
-      <GridItem bg="green.100" p="20px" className={styles.grid_item} minW="80%">
+      <GridItem p="20px" gridRow="2" backgroundColor={"green.500"}>
         <Outlet className={styles.outlet} />
       </GridItem>
-      <GridItem bg="red.100" p="20px">
+      <GridItem p="20px" gridRow="3" backgroundColor={"red.500"}>
         <Footer />
       </GridItem>
     </Grid>

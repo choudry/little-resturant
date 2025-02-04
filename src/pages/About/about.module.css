@@ -1,0 +1,20 @@
+.container {
+    width: 70%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 20px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.container img {
+    max-width: "300px";
+    width: "300px";
+    max-height: "auto";
+    float: "right";
+    border-radius: "20px";
+}

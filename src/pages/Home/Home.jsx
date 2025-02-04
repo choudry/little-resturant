@@ -6,7 +6,6 @@ import { DishCard } from "../../components/Dish/DishCard";
 import greek_salad from "../../assets/greek_salad.jpg"
 import lemon_dessert from "../../assets/lemon_dessert.jpg";
 import bruchetta from "../../assets/bruchetta.svg";
-import restaurantfood from "../../assets/restaurantfood.jpg";
 
 const Home = () => {
     return (

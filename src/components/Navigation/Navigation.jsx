@@ -2,30 +2,51 @@ import logo from "../../assets/logo.svg";
 import { Image } from "@chakra-ui/react";
 import React from 'react';
 import styles from './navigation.module.css'
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navigation = () => {
+  
     return (
       <nav className={styles.container}>
-        <Image src={logo} alt="logo" className={styles.logo} />
-        <ul className={styles.nav_links}>
+        <Link to="/">
+          <Image src={logo} alt="logo" className={styles.logo} />
+        </Link>
+        <ul className={styles.navigation}>
           <li>
-            <Link to="/">Home</Link> 
+            <NavLink to="/" className={({ isActive }) => (isActive ? styles.nav_links_active : styles.nav_links)}>
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? styles.nav_links_active : styles.nav_links)}>
+              About
+            </NavLink>
           </li>
           <li>
-            <Link to="/menu">Menu</Link>
+            <NavLink
+              to="/recipes-category"
+              className={({ isActive }) => (isActive ? styles.nav_links_active : styles.nav_links)}
+            >
+              Our Recipes
+            </NavLink>
           </li>
           <li>
-            <Link to="reservation">Reservation</Link>
+            <NavLink
+              to="/reservation"
+              className={({ isActive }) => (isActive ? styles.nav_links_active : styles.nav_links)}
+            >
+              Reservation
+            </NavLink>
           </li>
           <li>
-            <Link to="/order">Order Online</Link>
+            <NavLink to="/order" className={({ isActive }) => (isActive ? styles.nav_links_active : styles.nav_links)}>
+              Order Online
+            </NavLink>
           </li>
           <li>
-            <Link to="/login">Login</Link>
+            <NavLink to="/login" className={({ isActive }) => (isActive ? styles.nav_links_active : styles.nav_links)}>
+              Login
+            </NavLink>
           </li>
         </ul>
       </nav>
