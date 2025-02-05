@@ -1,10 +1,17 @@
 
 .dish_card {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
+    margin: 0.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     border-radius: 10px;
-    width: fit-content;
+    width: 300px;
+    max-width: 400px;
+    flex-grow: 1;
+}
+
+.dish_card button {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-size: medium;
+    width:fit-content;
 }

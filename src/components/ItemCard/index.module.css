@@ -8,7 +8,8 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     justify-content: flex-start;
     width: 300px;
-    height: min-max(400px, auto);
+    max-width: 400px;
+    flex-grow: 1;
 }
 
 .recipe:hover {
@@ -24,11 +25,11 @@
     border-radius: 10px 10px 0 0;
     padding: 0;
     margin: 0;
+    object-fit: contain;
 }
 
-.recipe .footer {
-    display: flex;
-    justify-content: center;
+.footer {
+    text-align: center;
     width: 100%;
     padding: 0.5rem;
     border-radius: 0 0 10px 10px;

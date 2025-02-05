@@ -17,4 +17,5 @@
     max-height: "auto";
     float: "right";
     border-radius: "20px";
+    object-fit: contain;
 }

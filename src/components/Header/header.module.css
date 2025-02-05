@@ -21,6 +21,7 @@
     padding: 2rem 4rem;
     width: 80%;
     text-align: left;
+    grid-template-columns: 1;
 }
 
 .left .top {

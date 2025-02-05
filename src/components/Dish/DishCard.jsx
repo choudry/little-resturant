@@ -1,27 +1,23 @@
 import React from 'react'
 import styles from "./DishCard.module.css";
-import { Button, Card, HStack, Image, Spacer, Text } from "@chakra-ui/react";
+import { Button, Card, HStack, Image, Spacer } from "@chakra-ui/react";
 
-export const DishCard = ({ id, title, description, image, price}) => {
+export const DishCard = ({ id, title, image, price}) => {
   return (
     <div className={styles.dish_card}>
-      <Card.Root maxW="xs" overflow="hidden">
-        <Image src={image} alt={title} h="220px" />
-        <Card.Body gap="2">
+      <Card.Root maxW="100%" overflow="auto">
+        <Image src={image} alt={title} w="100%" h="auto" objectFit="contain" />
+        <Card.Body>
           <Card.Title>
             <HStack>
               {title}
               <Spacer />
-              {price}
+              ${price}
             </HStack>
           </Card.Title>
-          <Card.Description>{description}</Card.Description>
-          <Text textStyle="medium" fontWeight="medium" letterSpacing="tight" mt="2">
-            Order a delivery
-          </Text>
         </Card.Body>
-        <Card.Footer gap="2">
-          <Button variant="solid">Buy now</Button>
+        <Card.Footer>
+          <Button variant="outline" size="sm">Add</Button>
         </Card.Footer>
       </Card.Root>
     </div>

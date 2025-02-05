@@ -8,7 +8,7 @@ import Navigation from '../components/Navigation/Navigation';
 export const RootLayout = () => {
   return (
     <Grid className={styles.root_layout}>
-      <GridItem p="20px" gridRow="1" backgroundColor={"#f5f5f5"}>
+      <GridItem p="20px" gridRow="1" className={styles.navigation}>
         <Navigation />
       </GridItem>
       <GridItem p="20px" gridRow="2" backgroundColor={"green.500"}>
